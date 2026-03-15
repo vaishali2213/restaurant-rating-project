@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>All Reviews</title>
+</head>
+
+<body>
+
+<h2>Restaurant Reviews</h2>
+
+<table border="1">
+
+<tr>
+<th>Restaurant</th>
+<th>Food</th>
+<th>Cost</th>
+<th>Rating</th>
+<th>Review</th>
+</tr>
+
+{% for r in reviews %}
+
+<tr>
+<td>{{r[0]}}</td>
+<td>{{r[1]}}</td>
+<td>{{r[2]}}</td>
+<td>{{r[3]}}</td>
+<td>{{r[4]}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+<a href="/">Go Back</a>
+
+</body>
+</html>

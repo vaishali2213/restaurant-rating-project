@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Restaurant Feedback</title>
+</head>
+
+<body>
+
+<h2>Restaurant Review Form</h2>
+
+<form action="/submit" method="post">
+
+Restaurant Name<br>
+<input type="text" name="restaurant"><br><br>
+
+Food Name<br>
+<input type="text" name="food"><br><br>
+
+Cost<br>
+<input type="number" name="cost"><br><br>
+
+Rating<br>
+<select name="rating">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+
+<br><br>
+
+Review<br>
+<textarea name="review"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit Review">
+
+</form>
+
+<br>
+
+<a href="/reviews">View All Reviews</a>
+
+</body>
+</html>
